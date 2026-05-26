@@ -1,0 +1,209 @@
+---
+title: "Infobase"
+description: "Upload files and scrape websites to build a knowledge base your AI agents can reference during calls."
+---
+
+## Overview
+
+**Infobase** is OneInbox's knowledge management layer. It allows you to attach structured information — from website pages or uploaded documents — directly to your AI voice agents. Once linked, agents can reference this content in real time to answer questions, handle objections, and stay contextually accurate during conversations.
+
+<Note>
+  Infobase is organized into **folders**. Each folder can contain a mix of scraped website URLs and uploaded files. You can attach an entire folder to one or more agents.
+</Note>
+
+---
+
+## Step 1: Navigate to Infobase
+
+From the left sidebar, click the **Infobase icon** (stacked layers icon at the bottom of the nav). You will land on the Infobase section, which displays all your folders and the files inside them.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_39_43.png"
+  alt="Infobase overview showing the Business folder with one file in progress"
+/>
+
+> In this example, the **Business** folder contains one file — `Webinar_AI SDR Workshop.pptx` — with a status of **In Progress**, meaning it is still being processed.
+
+---
+
+## Step 2: Add Information to a Folder
+
+To add new content to a folder, click **+ Add Info** in the top-right corner of the folder view.
+
+A modal will appear with two options:
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_39_53.png"
+  alt="Add Info modal with Website and Upload File options"
+/>
+
+| Option | Description |
+|---|---|
+| **Website** | Provide a URL — OneInbox will crawl and index the pages automatically |
+| **Upload File** | Upload a document in PDF, DOCX, TXT, or CSV format |
+
+Select the appropriate option and click **Next**.
+
+---
+
+## Step 3a: Add a Website
+
+If you select **Website**, you will be prompted to enter a URL.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_40_12.png"
+  alt="URL input field with https://oneinbox.ai/ entered"
+/>
+
+Enter the root domain or a specific page URL and click **Next**. OneInbox will crawl the site and return a list of all discoverable pages.
+
+### Select Pages to Index
+
+After crawling, a checklist of all found URLs will appear. By default, all pages are selected.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_40_24.png"
+  alt="URL selection list showing 59 of 300 pages selected with checkboxes"
+/>
+
+- Use **Select all** to include every page, or manually check/uncheck individual URLs.
+- Use the **Filter URLs** field to search for specific pages within the list.
+- The counter (e.g. `59/300`) shows how many pages are selected out of the maximum allowed.
+
+Click **Next** to confirm your selection.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_40_34.png"
+  alt="Confirmed URL list with green checkmarks and options to add more sources"
+/>
+
+<Tip>
+  You can continue adding more sources (additional websites or files) from this same screen before clicking **Next** to finalize.
+</Tip>
+
+---
+
+## Step 3b: Upload a File
+
+If you select **Upload File**, click the **Upload File** card and your system file picker will open.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_44_26.png"
+  alt="Add Info modal with Upload File option highlighted"
+/>
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_44_50.png"
+  alt="macOS file picker with Oneinbox.pdf selected"
+/>
+
+Select the file you want to upload (supported formats: PDF, DOCX, TXT, CSV) and click **Open**.
+
+The file will appear in the modal with a green checkmark confirming it has been staged for upload.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_44_57.png"
+  alt="Add Info modal showing Oneinbox.pdf staged with a checkmark"
+/>
+
+Click **Next** to confirm and begin processing.
+
+---
+
+## Step 4: Monitor Processing Status
+
+Once sources are submitted, you will be returned to the folder view. All newly added files and URLs will appear in the list with one of the following statuses:
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_44_13.png"
+  alt="Infobase folder showing 60 files all with In Progress status"
+/>
+
+| Status | Meaning |
+|---|---|
+| **In Progress** | Content is currently being crawled or processed |
+| **Ready** | Content has been indexed and is available for agent use |
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_46_18.png"
+  alt="Infobase folder showing Oneinbox.pdf as Ready and URLs as Ready"
+/>
+
+### Refreshing Status
+
+To manually check for updated statuses without reloading the page, click the **refresh icon** (↻) next to the status badge at the top of the folder.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_46_49.png"
+  alt="Refresh status tooltip visible on hover over the refresh icon"
+/>
+
+---
+
+## Step 5: Assign Users to a Folder (Optional)
+
+You can assign team members to a specific Infobase folder. Click the **+** icon next to the refresh button to open the user assignment dropdown.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_49_18.png"
+  alt="Assign user tooltip visible on hover over the plus icon"
+/>
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_49_36.png"
+  alt="User assignment dropdown showing a list of team members and agents"
+/>
+
+Select one or more users from the dropdown. This is useful for access control and team ownership of specific knowledge bases.
+
+---
+
+## Step 6: Attach an Infobase to an Agent
+
+Once your Infobase folder is ready, you can attach it to any agent.
+
+1. Navigate to **Agents** from the left sidebar.
+2. Select the agent you want to configure.
+3. Go to the **Role** tab.
+4. On the right side, locate the **Add attachment** panel.
+5. Click **Select file** and choose the Infobase folder from the dropdown.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_51_11.png"
+  alt="Agent Role tab showing the Add Attachment panel with Business infobase available"
+/>
+
+The folder will appear listed under attachments.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_51_18.png"
+  alt="Agent Role tab with Business infobase successfully attached"
+/>
+
+6. Click **Save** to apply the changes.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_51_29.png"
+  alt="Agent page with Save button in loading state after attaching Business infobase"
+/>
+
+<Check>
+  Your agent will now reference the Infobase content during live conversations.
+</Check>
+
+---
+
+## Summary
+
+| Step | Action |
+|---|---|
+| 1 | Navigate to Infobase from the sidebar |
+| 2 | Open a folder and click **+ Add Info** |
+| 3 | Add a website URL or upload a file |
+| 4 | Wait for status to change from **In Progress** to **Ready** |
+| 5 | Optionally assign team members to the folder |
+| 6 | Attach the folder to an agent via the Role tab and save |
+
+<Warning>
+  Files with **In Progress** status have not yet been indexed. Attaching a folder to an agent before all sources are **Ready** may result in incomplete knowledge coverage during calls.
+</Warning>
