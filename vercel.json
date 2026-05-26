@@ -1,42 +1,15 @@
 {
-  "buildCommand": "",
-  "outputDirectory": "public",
-  "rewrites": [
-    {
-      "source": "/_mintlify/:path*",
-      "destination": "https://oneinbox.mintlify.app/_mintlify/:path*"
-    },
-    {
-      "source": "/api/request",
-      "destination": "https://oneinbox.mintlify.app/_mintlify/api/request"
-    },
-    {
-      "source": "/llms.txt",
-      "destination": "https://oneinbox.mintlify.app/llms.txt"
-    },
-    {
-      "source": "/llms-full.txt",
-      "destination": "https://oneinbox.mintlify.app/llms-full.txt"
-    },
-    {
-      "source": "/sitemap.xml",
-      "destination": "https://oneinbox.mintlify.app/sitemap.xml"
-    },
-    {
-      "source": "/robots.txt",
-      "destination": "https://oneinbox.mintlify.app/robots.txt"
-    },
-    {
-      "source": "/mcp",
-      "destination": "https://oneinbox.mintlify.app/mcp"
-    },
-    {
-      "source": "/mintlify-assets/:path+",
-      "destination": "https://oneinbox.mintlify.app/mintlify-assets/:path+"
-    },
-    {
-      "source": "/:path*",
-      "destination": "https://oneinbox.mintlify.app/:path*"
-    }
+  "version": 2,
+  "builds": [{ "src": "package.json", "use": "@vercel/static" }],
+  "routes": [
+    { "src": "/_mintlify/(.*)", "dest": "https://oneinbox.mintlify.app/_mintlify/$1" },
+    { "src": "/api/request", "dest": "https://oneinbox.mintlify.app/_mintlify/api/request" },
+    { "src": "/llms.txt", "dest": "https://oneinbox.mintlify.app/llms.txt" },
+    { "src": "/llms-full.txt", "dest": "https://oneinbox.mintlify.app/llms-full.txt" },
+    { "src": "/sitemap.xml", "dest": "https://oneinbox.mintlify.app/sitemap.xml" },
+    { "src": "/robots.txt", "dest": "https://oneinbox.mintlify.app/robots.txt" },
+    { "src": "/mcp", "dest": "https://oneinbox.mintlify.app/mcp" },
+    { "src": "/mintlify-assets/(.*)", "dest": "https://oneinbox.mintlify.app/mintlify-assets/$1" },
+    { "src": "/(.*)", "dest": "https://oneinbox.mintlify.app/$1" }
   ]
 }
