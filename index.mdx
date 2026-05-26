@@ -4,19 +4,6 @@ description: "What Infobase is, how it works, and what you can do in the OneInbo
 icon: book
 ---
 
-## Who this guide is for
-
-This documentation is for **enterprise teams** using OneInbox for the first time — including users in Japan who may not be familiar with Infobase. No prior knowledge of knowledge bases or AI agents is required.
-
-**You will learn:**
-
-- What Infobase is and how it fits into OneInbox
-- What you do in the **browser (frontend)** vs what the **system (backend)** handles automatically
-- Product **limitations**, including file editing and website updates
-- Step-by-step procedures in the [User guide](/user-guide)
-
----
-
 ## What is Infobase?
 
 **Infobase** is OneInbox's knowledge management layer. It stores information from **websites** and **uploaded documents** in **folders**, so **AI voice agents** can use that content during live phone conversations.
@@ -67,7 +54,7 @@ You do not manually "train" a model in Infobase. You **supply sources** and wait
 | Create or delete folders | Yes | — |
 | Add websites, select pages to index | Yes | Crawls and indexes URLs |
 | Upload files (PDF, DOCX, TXT, CSV, PPTX) | Yes | Parses and indexes files |
-| Edit uploaded file content in the UI | **No — not on roadmap** | — |
+| Edit uploaded file content in the UI | **No** | — |
 | Update a file after external edit | **Re-upload** the file | Re-indexes (**In Progress** → **Ready**) |
 | Check processing status | Yes — view list and **↻ refresh** | Runs processing |
 | Refresh website content after site changes | **Manual refresh only** — no auto re-crawl | Re-processes when you refresh |
@@ -82,15 +69,3 @@ You do not manually "train" a model in Infobase. You **supply sources** and wait
 <Card title="Step-by-step user guide" icon="list-ol" href="/user-guide">
   Follow procedures from opening Infobase through attach and delete.
 </Card>
-
----
-
-## Key terms
-
-| Term | Meaning |
-| --- | --- |
-| **Folder** | A container for websites and files (e.g. "Business") |
-| **In Progress** | Source is still being crawled or indexed |
-| **Ready** | Source is indexed and available to agents |
-| **Agent** | Your AI voice configuration in OneInbox |
-| **Attachment** | Linking an Infobase folder to an agent on the Role tab |
