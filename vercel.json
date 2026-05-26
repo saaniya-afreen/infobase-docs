@@ -2,8 +2,10 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": null,
+  "trailingSlash": true,
   "rewrites": [
-    { "source": "/ja", "destination": "/ja/index.html" },
-    { "source": "/ja/", "destination": "/ja/index.html" }
+    { "source": "/ja", "destination": "/ja/index/" },
+    { "source": "/ja/index", "destination": "/ja/index/" },
+    { "source": "/index", "destination": "/index/" }
   ]
 }
