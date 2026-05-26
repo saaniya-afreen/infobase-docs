@@ -22,7 +22,10 @@
         "groups": [
           {
             "group": "Documentation",
-            "pages": ["index", "user-guide"]
+            "pages": [
+              { "page": "index", "title": "Introduction" },
+              { "page": "user-guide", "title": "Step-by-step guide" }
+            ]
           }
         ]
       },
@@ -31,7 +34,10 @@
         "groups": [
           {
             "group": "ドキュメント",
-            "pages": ["ja/index", "ja/user-guide"]
+            "pages": [
+              { "page": "ja/index", "title": "はじめに" },
+              { "page": "ja/user-guide", "title": "操作手順" }
+            ]
           }
         ]
       }
