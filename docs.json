@@ -22,7 +22,7 @@
         "groups": [
           {
             "group": "Documentation",
-            "pages": ["index", "limitations", "user-guide"]
+            "pages": ["index"]
           }
         ]
       },
@@ -31,7 +31,7 @@
         "groups": [
           {
             "group": "ドキュメント",
-            "pages": ["ja/index", "ja/limitations", "ja/user-guide"]
+            "pages": ["ja/index"]
           }
         ]
       }
