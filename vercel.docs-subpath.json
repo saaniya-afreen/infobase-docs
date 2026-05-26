@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/docs",
+      "destination": "https://oneinbox.mintlify.app/docs"
+    },
+    {
+      "source": "/docs/:match*",
+      "destination": "https://oneinbox.mintlify.app/docs/:match*"
+    },
+    {
+      "source": "/_mintlify/:path*",
+      "destination": "https://oneinbox.mintlify.app/_mintlify/:path*"
+    },
+    {
+      "source": "/mintlify-assets/:path+",
+      "destination": "https://oneinbox.mintlify.app/mintlify-assets/:path+"
+    }
+  ]
+}

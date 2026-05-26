@@ -1,11 +1,42 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "framework": null,
-  "trailingSlash": true,
+  "buildCommand": "",
+  "outputDirectory": "public",
   "rewrites": [
-    { "source": "/ja", "destination": "/ja/index/" },
-    { "source": "/ja/index", "destination": "/ja/index/" },
-    { "source": "/index", "destination": "/index/" }
+    {
+      "source": "/_mintlify/:path*",
+      "destination": "https://oneinbox.mintlify.app/_mintlify/:path*"
+    },
+    {
+      "source": "/api/request",
+      "destination": "https://oneinbox.mintlify.app/_mintlify/api/request"
+    },
+    {
+      "source": "/llms.txt",
+      "destination": "https://oneinbox.mintlify.app/llms.txt"
+    },
+    {
+      "source": "/llms-full.txt",
+      "destination": "https://oneinbox.mintlify.app/llms-full.txt"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "https://oneinbox.mintlify.app/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "https://oneinbox.mintlify.app/robots.txt"
+    },
+    {
+      "source": "/mcp",
+      "destination": "https://oneinbox.mintlify.app/mcp"
+    },
+    {
+      "source": "/mintlify-assets/:path+",
+      "destination": "https://oneinbox.mintlify.app/mintlify-assets/:path+"
+    },
+    {
+      "source": "/:path*",
+      "destination": "https://oneinbox.mintlify.app/:path*"
+    }
   ]
 }
