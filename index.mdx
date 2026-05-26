@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-description: "What Infobase is, how it works, and what you can do in the OneInbox UI versus the system backend."
+description: "What Infobase is, how it works, and what you manage in OneInbox versus what runs automatically."
 icon: book
 ---
 
@@ -41,20 +41,31 @@ You do not manually "train" a model in Infobase. You **supply sources** and wait
 
 ---
 
-## Frontend vs backend
+## Your work and automatic processing
 
-| Activity | Frontend (you in OneInbox) | Backend / system (automatic) |
-| --- | --- | --- |
-| Create or delete folders | Yes | — |
-| Add websites, select pages to index | Yes | Crawls and indexes URLs |
-| Upload files (PDF, DOCX, TXT, CSV, PPTX) | Yes | Parses and indexes files |
-| Edit uploaded file content in the UI | **No** | — |
-| Update a file after external edit | **Re-upload** the file | Re-indexes (**In Progress** → **Ready**) |
-| Check processing status | Yes — view list and **↻ refresh** | Runs processing |
-| Refresh website content after site changes | **Manual refresh only** — no auto re-crawl | Re-processes when you refresh |
-| Assign users to a folder | Yes (optional) | Access per your org settings |
-| Attach folder to an agent | Yes — Agent → Role tab | Uses index on calls |
-| Delete a file or folder | Yes | Removes indexed content |
+### What you do in OneInbox
+
+- **Folders** — Create, organize, and delete Infobase folders
+- **Websites** — Add URLs and choose which pages to include
+- **Files** — Upload PDF, DOCX, PPTX, TXT, or CSV
+- **Status** — Watch the folder list and use **↻ refresh** when you need an update
+- **Website changes** — Refresh manually after your live site changes (OneInbox does not re-crawl on its own)
+- **Team** — Optionally assign users to a folder (based on your org’s permissions)
+- **Agents** — Attach a folder on the agent **Role** tab
+- **Cleanup** — Delete individual files or entire folders
+
+### What OneInbox handles for you
+
+- Crawls and indexes the website pages you selected
+- Parses and indexes uploaded files
+- Processes each source (**In Progress** → **Ready**)
+- Re-indexes when you re-upload a file or refresh a folder
+- Supplies that knowledge to agents during live calls
+- Removes indexed content when you delete a source
+
+<Note>
+  **Editing files:** You cannot change uploaded file content inside OneInbox. Edit the file in your usual app, then **re-upload** it to the same folder and wait until it is **Ready**.
+</Note>
 
 <Card title="Limitations and file updates" icon="triangle-exclamation" href="/limitations">
   Read supported formats, editing rules, website refresh behavior, and FAQ.
