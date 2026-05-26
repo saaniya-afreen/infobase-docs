@@ -1,0 +1,263 @@
+---
+title: "User guide"
+description: "Step-by-step instructions to create folders, add content, attach agents, and delete Infobase items."
+icon: list-ol
+---
+
+<Note>
+  New to Infobase? Read the [Introduction](/index) and [Limitations](/limitations) first.
+</Note>
+
+## Step 1: Navigate to Infobase
+
+From the left sidebar, click the **Infobase icon** (stacked layers icon at the bottom of the nav). You will land on the Infobase section, which displays all your folders and the files inside them.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_39_43.png"
+  alt="Infobase overview showing the Business folder with one file in progress"
+/>
+
+> In this example, the **Business** folder contains one file — `Webinar_AI SDR Workshop.pptx` — with a status of **In Progress**, meaning it is still being processed.
+
+---
+
+## Step 2: Add a Folder
+
+Before adding websites or files, create a folder to organize your knowledge base.
+
+1. In the left **Infobases** menu panel, click the **+** button next to the **Infobases** heading.
+2. Enter a name for your folder (for example, `Business` or `Product Docs`).
+3. Confirm to create the folder.
+
+The new folder appears in the Infobases list on the left. Click the folder to open it in the main view — you will add content in the next step.
+
+<img
+  src="/images/Screenshot_add_folder_menu.png"
+  alt="Infobases panel with the plus button next to the Infobases heading to create a new folder"
+/>
+
+---
+
+## Step 3: Add Information to a Folder
+
+Open the folder you created, then click **+ Add Info** in the top-right corner of the folder view.
+
+A modal will appear with two options:
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_39_53.png"
+  alt="Add Info modal with Website and Upload File options"
+/>
+
+| Option | Description |
+|---|---|
+| **Website** | Provide a URL — OneInbox will crawl and index the pages automatically |
+| **Upload File** | Upload a document (PDF, DOCX, PPTX, TXT, or CSV) |
+
+Select the appropriate option and click **Next**.
+
+---
+
+## Step 4a: Add a Website
+
+If you select **Website**, you will be prompted to enter a URL.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_40_12.png"
+  alt="URL input field with https://oneinbox.ai/ entered"
+/>
+
+Enter the root domain or a specific page URL and click **Next**. OneInbox will crawl the site and return a list of all discoverable pages.
+
+### Select Pages to Index
+
+After crawling, a checklist of all found URLs will appear. By default, all pages are selected.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_40_24.png"
+  alt="URL selection list showing 59 of 300 pages selected with checkboxes"
+/>
+
+- Use **Select all** to include every page, or manually check/uncheck individual URLs.
+- Use the **Filter URLs** field to search for specific pages within the list.
+- The counter (e.g. `59/300`) shows how many pages are selected out of the maximum allowed.
+
+Click **Next** to confirm your selection.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_40_34.png"
+  alt="Confirmed URL list with green checkmarks and options to add more sources"
+/>
+
+<Tip>
+  You can continue adding more sources (additional websites or files) from this same screen before clicking **Next** to finalize.
+</Tip>
+
+---
+
+## Step 4b: Upload a File
+
+If you select **Upload File**, click the **Upload File** card and your system file picker will open.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_44_26.png"
+  alt="Add Info modal with Upload File option highlighted"
+/>
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_44_50.png"
+  alt="macOS file picker with Oneinbox.pdf selected"
+/>
+
+Select the file you want to upload (supported formats: **PDF, DOCX, PPTX, TXT, CSV**) and click **Open**.
+
+The file will appear in the modal with a green checkmark confirming it has been staged for upload.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_44_57.png"
+  alt="Add Info modal showing Oneinbox.pdf staged with a checkmark"
+/>
+
+Click **Next** to confirm and begin processing.
+
+---
+
+## Step 5: Monitor Processing Status
+
+Once sources are submitted, you will be returned to the folder view. All newly added files and URLs will appear in the list with one of the following statuses:
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_44_13.png"
+  alt="Infobase folder showing 60 files all with In Progress status"
+/>
+
+| Status | Meaning |
+|---|---|
+| **In Progress** | Content is currently being crawled or processed |
+| **Ready** | Content has been indexed and is available for agent use |
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_46_18.png"
+  alt="Infobase folder showing Oneinbox.pdf as Ready and URLs as Ready"
+/>
+
+### Refreshing status (manual)
+
+OneInbox does **not** automatically re-sync website content when a live site changes. To check processing status or pick up updates after you have changed sources, click the **refresh icon (↻)** next to the status badge at the top of the folder.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_46_49.png"
+  alt="Refresh status tooltip visible on hover over the refresh icon"
+/>
+
+---
+
+## Step 6: Assign Users to a Folder (Optional)
+
+You can assign team members to a specific Infobase folder. Click the **+** icon next to the refresh button to open the user assignment dropdown.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_49_18.png"
+  alt="Assign user tooltip visible on hover over the plus icon"
+/>
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_49_36.png"
+  alt="User assignment dropdown showing a list of team members and agents"
+/>
+
+Select one or more users from the dropdown. This is useful for access control and team ownership of specific knowledge bases.
+
+---
+
+## Step 7: Attach an Infobase to an Agent
+
+Once your Infobase folder is ready, you can attach it to any agent.
+
+1. Navigate to **Agents** from the left sidebar.
+2. Select the agent you want to configure.
+3. Go to the **Role** tab.
+4. On the right side, locate the **Add attachment** panel.
+5. Click **Select file** and choose the Infobase folder from the dropdown.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_51_11.png"
+  alt="Agent Role tab showing the Add Attachment panel with Business infobase available"
+/>
+
+The folder will appear listed under attachments.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_51_18.png"
+  alt="Agent Role tab with Business infobase successfully attached"
+/>
+
+6. Click **Save** to apply the changes.
+
+<img
+  src="/images/Screenshot_2026-05-26_at_12_51_29.png"
+  alt="Agent page with Save button in loading state after attaching Business infobase"
+/>
+
+<Check>
+  Your agent will now reference the Infobase content during live conversations.
+</Check>
+
+---
+
+## Step 8: Delete a File
+
+To remove a single file or URL from a folder, open the folder and find the item in the list.
+
+1. Hover over the row you want to remove.
+2. Click the **trash icon** on the far right of that row.
+3. Confirm the deletion when prompted.
+
+<img
+  src="/images/Screenshot_delete_file.png"
+  alt="Infobase file list with delete trash icon on a row"
+/>
+
+<Warning>
+  Deleting a file permanently removes it from the folder. If the folder is attached to an agent, that content will no longer be available during calls.
+</Warning>
+
+---
+
+## Step 9: Delete a Folder
+
+To remove an entire Infobase folder and all files inside it:
+
+1. Open the folder you want to delete (or select it from the **Infobases** list on the left).
+2. Click the **⋮** (three dots) menu in the top-right of the folder view, next to **+ Add Info**.
+3. Select **Delete** from the dropdown.
+4. Confirm the deletion when prompted.
+
+<img
+  src="/images/Screenshot_delete_folder.png"
+  alt="Folder options menu open with Delete option"
+/>
+
+<Warning>
+  Deleting a folder removes all files and URLs inside it. Detach the folder from any agents first if you want to avoid broken attachments.
+</Warning>
+
+---
+
+## Summary
+
+| Step | Action |
+|---|---|
+| 1 | Navigate to Infobase from the sidebar |
+| 2 | Click **+** next to **Infobases** in the left menu, name the folder, and create it |
+| 3 | Open the folder and click **+ Add Info** |
+| 4 | Add a website URL or upload a file (PDF, DOCX, PPTX, TXT, CSV) |
+| 5 | Wait for **Ready**; use **↻** to refresh status manually |
+| 6 | Optionally assign team members to the folder |
+| 7 | Attach the folder to an agent via the Role tab and save |
+| 8 | Delete individual files using the trash icon on each row |
+| 9 | Delete an entire folder via the **⋮** menu → **Delete** |
+
+<Warning>
+  Files with **In Progress** status have not yet been indexed. Attaching a folder to an agent before all sources are **Ready** may result in incomplete knowledge coverage during calls.
+</Warning>

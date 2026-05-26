@@ -1,0 +1,102 @@
+---
+title: "Limitations and updates"
+description: "Infobase limits, supported formats, file editing policy, website refresh, and frequently asked questions."
+icon: triangle-exclamation
+---
+
+## Supported upload formats
+
+You can upload the following file types to an Infobase folder:
+
+| Format | Type |
+| --- | --- |
+| **PDF** | Documents |
+| **DOCX** | Microsoft Word |
+| **PPTX** | Microsoft PowerPoint |
+| **TXT** | Plain text |
+| **CSV** | Tabular data |
+
+<Warning>
+  Other formats are not supported unless your administrator confirms otherwise. Convert unsupported files to a supported format before uploading.
+</Warning>
+
+---
+
+## Editing uploaded files
+
+<Warning>
+  OneInbox does **not** support editing uploaded file content inside the platform. **Inline editing is not on the product roadmap** and will not be added as an in-app editor for these files.
+</Warning>
+
+To change document content:
+
+1. Edit the file in your usual tool (Microsoft Word, PowerPoint, Acrobat, etc.).
+2. **Re-upload** the revised file to the same Infobase folder in OneInbox.
+3. Wait until status is **Ready**.
+4. If the folder is attached to agents, allow indexing to finish before expecting updated answers on calls.
+
+You may delete the older file row after re-uploading if you want to avoid duplicate entries in the folder list.
+
+<Tip>
+  Plan content reviews outside OneInbox. Treat Infobase as a **publishing destination**, not an authoring environment.
+</Tip>
+
+---
+
+## Website content updates
+
+When a live website changes (new pages, revised copy, removed URLs):
+
+- OneInbox does **not** automatically re-crawl or sync website content in the background.
+- You must use the **manual refresh icon (↻)** next to the folder status to check and update processing status.
+- If the site structure changed significantly, you may need to add URLs again or adjust which pages are indexed.
+
+---
+
+## Other limitations
+
+### Processing and agents
+
+- Sources with **In Progress** status are **not fully available** to agents.
+- Attaching a folder before all items are **Ready** can cause **incomplete** answers on calls.
+- Website crawls may be limited by a maximum number of pages per site (the UI shows a counter such as `59/300` during selection).
+
+### Websites
+
+- Crawling depends on how the site is built. Login-only pages, heavy JavaScript apps, or blocked crawlers may not index fully.
+- English and Japanese URLs (e.g. paths containing `/ja/`) can appear in the same folder.
+
+### Deletion
+
+- Deleting a file removes it from the folder and from agent knowledge.
+- Deleting a folder removes **all** content inside. Detach the folder from agents first to avoid orphaned attachments.
+
+### Permissions
+
+- Who can create folders, assign users, or delete content may depend on your organization's OneInbox roles. Contact your administrator if an action is unavailable.
+
+---
+
+## Frequently asked questions
+
+<AccordionGroup>
+  <Accordion title="Can I edit a PDF or Word file inside OneInbox?">
+    No. Edit the file externally, then **re-upload** it. In-app editing is **not on the roadmap**.
+  </Accordion>
+  <Accordion title="Does the platform automatically update when our website changes?">
+    No. Use **manual refresh (↻)** on the folder. Re-add or adjust URLs if the site structure changed.
+  </Accordion>
+  <Accordion title="Can I upload PowerPoint files?">
+    Yes. **PPTX** is supported along with PDF, DOCX, TXT, and CSV.
+  </Accordion>
+  <Accordion title="When can agents use new content?">
+    After the file or URL shows **Ready**. If the folder is already attached to an agent, indexing must complete first.
+  </Accordion>
+  <Accordion title="What is the difference between a folder and an agent?">
+    A **folder** holds knowledge sources. An **agent** is your voice AI configuration. You **attach** folders to agents so calls can use that knowledge.
+  </Accordion>
+</AccordionGroup>
+
+<Card title="User guide" icon="list-ol" href="/user-guide">
+  Continue to step-by-step instructions.
+</Card>
