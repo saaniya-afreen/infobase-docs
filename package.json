@@ -1,0 +1,11 @@
+{
+  "name": "infobase-docs",
+  "private": true,
+  "scripts": {
+    "build": "rm -rf dist export.zip && mint export --output export.zip && unzip -q export.zip -d dist && rm -rf dist/out dist/export.zip dist/serve.js dist/'Start Docs.bat' dist/'Start Docs.command' 2>/dev/null; true",
+    "dev": "mint dev"
+  },
+  "dependencies": {
+    "mint": "^4.2.0"
+  }
+}
